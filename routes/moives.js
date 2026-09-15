@@ -24,9 +24,9 @@ router.post ('/', (req,res) =>{
     const newMovie= {
         id : movies.length + 1,
         title : req.body.title,
-        yeaar : req.body.year
+        year : req.body.year
     };
-    movie.pushnew(newMovie)
+    movies.push(newMovie)
     res.status(201).json(newMovie);
 });
 
